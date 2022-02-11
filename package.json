@@ -1,0 +1,29 @@
+{
+  "name": "w2dc_project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "CodedlyAfrica_HQ",
+    "Academy",
+    "Web_Development",
+    "Webmaster"
+  ],
+  "author": "CodedlyAfrica_HQ's Victor Sky Emejor",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.27.7",
+    "gulp": "^4.0.2",
+    "gulp-postcss": "^9.0.1",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.49.7"
+  },
+  "dependencies": {
+    "autoprefixer": "^10.4.2",
+    "cssnano": "^5.0.16",
+    "gulp-terser": "^2.1.0"
+  }
+}
