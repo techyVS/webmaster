@@ -1,0 +1,94 @@
+@use 'resets' as *;
+@use 'media-queries';
+
+.main-section {
+	background: $bg-color;
+	min-height: 150vh;
+	position: relative;
+	#{&}__main-container {
+		min-height: 30px;
+		width: $width-size;
+		margin: $width-margin;
+		font-family: $font;
+
+		.text-body {
+			padding-top: 6em;
+			max-width: 550px;
+			.heading {
+				text-transform: capitalize;
+				color: $color-light;
+				font-size: clamp(35px, 5vw, 48px);
+				line-height: $heading-line-height;
+				margin-bottom: 0.4em;
+				// Media queries inserted for padding of heading text on the right side in order to achieve UI design layout structure...
+				// @media screen and (min-width: 43em) {
+				// 	padding-right: 0.6em;
+				// }
+				// End of media queries
+				span {
+					color: $color-primary;
+				}
+			}
+
+			.text-paragraph {
+				color: $color-light;
+				margin-bottom: 1.3em;
+			}
+
+			.price-tag {
+				color: $color-light;
+				font-size: 2rem;
+				position: relative;
+				padding-left: 0.3em;
+				.currency {
+					font-size: 15px;
+					position: absolute;
+					top: 16%;
+					left: 0;
+					font-weight: $weight-light;
+				}
+				.discount {
+					font-size: 1rem;
+					font-weight: $weight-medium;
+				}
+				.percent-off {
+					font-size: 1rem;
+					color: $color-secondary;
+					font-weight: $weight-medium;
+				}
+			}
+
+			.rating-body {
+				display: flex;
+				align-items: center;
+				gap: 0.5em;
+				.rating-text {
+					color: $color-secondary;
+					font-weight: $weight-medium;
+				}
+			}
+
+			.btn {
+				background: $primary-btn-bg-color;
+				text-decoration: none;
+				display: inline-block;
+				padding: $primary-btn-padding;
+				border-radius: $primary-btn-bradius;
+				margin-top: 1.5em;
+				color: $primary-btn-color;
+				font-weight: $weight-medium;
+				text-transform: capitalize;
+			}
+		}
+
+		.image-body {
+			position: absolute;
+			margin-top: 2em;
+			.img-container {
+				img {
+					width: 100%;
+				}
+			}
+		}
+	}
+}

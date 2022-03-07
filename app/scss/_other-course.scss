@@ -1,0 +1,88 @@
+@use 'resets' as *;
+
+.other-course-section {
+	padding-top: 4em;
+	padding-bottom: 6em;
+	min-height: 100vh;
+	.courses-wrapper {
+		width: $width-size;
+		margin: $width-margin;
+		font-family: $font;
+
+		.heading {
+			font-size: $heading-size;
+			line-height: $heading-line-height;
+			margin-bottom: 3em;
+			max-width: 600px;
+			.heading-span {
+				color: $color-primary;
+			}
+		}
+
+		.container {
+			display: grid;
+			gap: 150px;
+
+			.course-card {
+				position: relative;
+				border-radius: $box-radius;
+				box-shadow: $box-shadow-primary;
+				height: 400px;
+				.container {
+					min-height: 200px;
+					border-radius: 20px 20px 0 0;
+					margin-bottom: 1.5em;
+				}
+				// Product Design card
+				.img-container-one {
+					background: url('/assets/images/product\ design.jpeg') center/cover,
+						no-repeat !important;
+				}
+				// Digital Marketing card
+				.img-container-two {
+					background: url('/assets/images/digital-marketing.jpg') center/cover,
+						no-repeat !important;
+				}
+				// Web Development card
+				.img-container-three {
+					background: url('/assets/images/web-dev.jpg') center/cover, no-repeat !important;
+				}
+				// UI/UX card
+				.img-container-four {
+					background: url('/assets/images/ui-ux.jpg') center/cover, no-repeat !important;
+				}
+
+				.course-title {
+					font-weight: $weight-medium;
+					text-transform: capitalize;
+					padding: 0 2em;
+				}
+				.btn {
+					text-decoration: none;
+					padding: $primary-btn-padding;
+					display: inline-block;
+					background: $primary-btn-bg-color;
+					border-radius: $primary-btn-bradius;
+					color: $primary-btn-color;
+					position: absolute;
+					top: 92%;
+					left: 50%;
+					transform: translateX(-50%);
+					white-space: nowrap;
+					font-weight: $weight-medium;
+				}
+				.pending {
+					position: absolute;
+					top: -8%;
+					right: 2%;
+					background: $color-secondary;
+					padding: 15px 30px;
+					border-radius: 30px;
+					color: $color-light;
+					text-transform: capitalize;
+					font-weight: $weight-medium;
+				}
+			}
+		}
+	}
+}

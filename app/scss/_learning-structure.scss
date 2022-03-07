@@ -1,0 +1,44 @@
+@use 'resets' as *;
+
+.structure-section {
+	min-height: 70vh;
+	font-family: $font;
+	#{&}__container {
+		width: $width-size;
+		margin: $width-margin;
+		padding: 5em 0;
+		.heading-container {
+			margin-bottom: 3em;
+			.heading {
+				font-size: $heading-size;
+				.span {
+					color: $color-primary;
+				}
+			}
+		}
+
+		.container {
+			display: grid;
+			gap: 40px;
+			.box {
+				display: flex;
+				gap: 20px;
+				align-items: center;
+				h4 {
+					height: 20px;
+					width: 20px;
+					padding: 2em;
+					border-radius: 50%;
+					box-shadow: $box-shadow-secondary;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+				}
+
+				.box-img {
+					display: none;
+				}
+			}
+		}
+	}
+}

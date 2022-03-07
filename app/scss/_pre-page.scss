@@ -14,6 +14,9 @@
 			cursor: pointer;
 		}
 	}
+	@media screen and (min-width: 43em) {
+		min-height: 14vh;
+	}
 }
 // End of pre-page header styles
 
@@ -31,7 +34,7 @@
 
 // prepage section styles
 .pre-page-section {
-	min-height: 100vh;
+	min-height: 120vh;
 	background: url('/assets/images/bg-img.jpeg') center/cover, no-repeat;
 	display: flex;
 	align-items: center;
@@ -75,41 +78,18 @@
 			border-radius: $primary-btn-bradius;
 			text-decoration: none;
 			margin-top: 1.5em;
-			text-transform: capitalize;
+			// text-transform: capitalize;
 			color: $primary-btn-color;
+			// margin-right: 1em;
+			width: 100%;
+			text-align: center;
+			font-weight: $weight-medium;
+			&:last-child {
+				border: $primary-btn-bg-color solid 2px;
+				background: transparent;
+				padding: 14px 30px;
+			}
 		}
 	}
 }
 // end of prepage section styles
-
-// Embed form styles
-.embed-form {
-	padding: 5em 0 0 0;
-	min-height: 150vh;
-	margin-top: 2em;
-
-	#{&}__pre-page-form-container {
-		width: 80%;
-		margin: 0 auto;
-
-		.form {
-			width: 100%;
-			min-height: 150vh;
-		}
-	}
-}
-// end of embedded form styles
-
-// Go to top styles
-.to-top-div {
-	// background: red;
-	padding: 1em 0;
-	display: flex;
-	justify-content: center;
-	.top {
-		text-decoration: none;
-		font-family: $font;
-		color: #000;
-		font-weight: $weight-medium;
-	}
-}

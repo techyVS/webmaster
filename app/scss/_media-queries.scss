@@ -1,0 +1,283 @@
+// Media queries for main section on homapage //
+@use 'resets' as *;
+
+// tablet screen
+@media screen and (min-width: 43em) {
+	.main-section {
+		min-height: 100vh !important;
+		display: flex;
+		align-items: center;
+		#{&}__main-container {
+			display: flex;
+			justify-content: center;
+
+			.text-body {
+				text-align: center;
+				max-width: unset;
+				padding-top: 0 !important;
+
+				.price-tag {
+					display: inline-block;
+				}
+
+				.rating-body {
+					justify-content: center;
+				}
+
+				.btn {
+					display: block;
+					width: 80%;
+					text-align: center;
+				}
+			}
+
+			.image-body {
+				display: none;
+			}
+		}
+	}
+}
+
+// laptop screen
+@media screen and (min-width: 62em) {
+	.main-section {
+		height: 120vh;
+		#{&}__main-container {
+			display: unset;
+			.text-body {
+				text-align: start;
+				position: relative;
+				z-index: 1;
+				.rating-body {
+					justify-content: start;
+				}
+				.btn {
+					display: inline-block;
+					width: unset;
+				}
+			}
+
+			.image-body {
+				display: block;
+				top: 10%;
+				left: 55%;
+				z-index: 0;
+				.img-container {
+					width: 100%;
+				}
+			}
+		}
+	}
+}
+// end of media queries for main section //
+
+// learning structure section media query //
+// tablet screen
+@media screen and (min-width: 43em) {
+	.structure-section {
+		padding-top: 5em;
+		#{&}__container {
+			.heading-container {
+				margin-bottom: 5em !important;
+			}
+			.container {
+				width: 85%;
+				margin: 0 auto;
+				grid-template-columns: repeat(2, 1fr);
+				row-gap: 70px !important;
+
+				.box {
+					box-shadow: $box-shadow-primary;
+					height: 325px;
+					border-radius: $box-radius;
+					position: relative;
+					display: flex;
+					justify-content: center;
+					align-items: flex-start !important;
+					padding: 0 30px;
+					h4 {
+						position: absolute;
+						top: -11%;
+						left: 50%;
+						transform: translateX(-50%);
+						background: $color-light;
+					}
+					.paragraph {
+						padding-top: 3em;
+					}
+
+					.box-img {
+						display: block !important;
+						position: absolute;
+						right: 10%;
+						bottom: 5%;
+						width: 90px;
+					}
+				}
+			}
+		}
+	}
+}
+
+// laptop screen
+@media screen and (min-width: 62em) {
+	.structure-section {
+		#{&}__container {
+			.container {
+				width: 100%;
+
+				grid-template-columns: repeat(4, 1fr);
+			}
+		}
+	}
+}
+// end of learning structure section media query //
+
+// course intro snippet media query
+// tablet screen...
+@media screen and (min-width: 43em) {
+	.course-intro-snippet {
+		padding-top: 10em !important;
+		.course-intro-container {
+			.container {
+				display: grid;
+				grid-template-columns: 1fr 1fr;
+				grid-template-areas: 'vid-img-wrap write-up-wrap';
+			}
+			.btns {
+				padding-top: 1.7em;
+				.cta {
+					margin-right: 10px;
+					display: inline-block !important;
+				}
+				.cta-2 {
+					display: inline-block !important;
+				}
+			}
+		}
+	}
+}
+// end of course intro snippet media query
+
+// after course media queries section
+// tablet screen
+@media screen and (min-width: 43em) {
+	.after-course-section {
+		.after-course-container {
+			.container {
+				grid-template-columns: repeat(2, 1fr);
+
+				.box-wrap {
+					text-align: left !important;
+					.title-icon {
+						justify-content: flex-start !important;
+					}
+				}
+			}
+		}
+	}
+}
+
+// laptop screen
+@media screen and (min-width: 62em) {
+	.after-course-section {
+		position: relative;
+		.after-course-container {
+			.container {
+				.box-wrap {
+					padding: 25px 20px !important;
+				}
+				width: 90%;
+				grid-template-columns: repeat(3, 1fr);
+			}
+		}
+		.svg-container {
+			display: block !important;
+			position: absolute;
+			right: 0;
+			bottom: -10%;
+		}
+	}
+}
+// end of after course media queries
+
+// become a web developer section
+// tablet screen
+@media screen and (min-width: 43em) {
+	.web-dev {
+		padding-top: 13em !important;
+		.container {
+			.buttons-wrap {
+				.btn {
+					display: inline-block !important;
+					&:nth-child(1) {
+						margin-right: 1em;
+					}
+				}
+			}
+		}
+	}
+} //end of tablet screen
+
+// laptop screen
+@media screen and (min-width: 62em) {
+	.web-dev {
+		.container {
+			position: relative;
+			height: 400px;
+			.buttons-wrap {
+				position: absolute;
+				right: 5%;
+				.btn {
+					display: inline-block !important;
+					&:nth-child(1) {
+						margin-right: 1em;
+					}
+				}
+			}
+		}
+	}
+}
+// end of become a web developer media queries section
+
+// other courses media queries
+// tablet screen
+@media screen and (min-width: 43em) {
+	.other-course-section {
+		.courses-wrapper {
+			.container {
+				grid-template-columns: repeat(2, 1fr);
+				column-gap: 50px !important;
+			}
+		}
+	}
+}
+
+// laptop screen
+@media screen and (min-width: 62em) {
+	.other-course-section {
+		.courses-wrapper {
+			.container {
+				grid-template-columns: repeat(4, 1fr);
+				gap: 35px !important;
+			}
+		}
+	}
+}
+// end of other courses media queries
+
+// footer section
+// tablet screen
+@media screen and (min-width: 43em) {
+	#footer {
+		#footer-container {
+			.brand-wrap {
+				justify-content: flex-start;
+			}
+			.footer-text {
+				max-width: 300px;
+				text-align: left;
+			}
+		}
+	}
+}

@@ -1,0 +1,47 @@
+@use 'resets' as *;
+
+.after-course-section {
+	min-height: 120vh;
+	padding-top: 6em;
+	.after-course-container {
+		font-family: $font;
+		width: $width-size;
+		margin: $width-margin;
+		.heading {
+			font-size: $heading-size;
+			line-height: $heading-line-height;
+			margin-bottom: 1.5em;
+			.title {
+				color: $color-primary;
+			}
+		}
+
+		.container {
+			display: grid;
+			gap: 40px;
+			.box-wrap {
+				text-align: center;
+				padding: 25px 15px;
+				transition: all 200ms ease-in-out;
+				.title-icon {
+					color: $color-primary;
+					display: flex;
+					justify-content: center;
+					margin-bottom: 1em;
+					font-size: 1.3rem;
+				}
+				.title {
+					margin-bottom: 0.9em;
+				}
+				&:hover {
+					box-shadow: $box-shadow-primary;
+					cursor: pointer;
+				}
+			}
+		}
+	}
+
+	.svg-container {
+		display: none;
+	}
+}

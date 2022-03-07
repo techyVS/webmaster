@@ -14,23 +14,42 @@ html {
 
 body {
 	font-size: 16px;
-	line-height: 1.6;
+	line-height: 1.7;
 }
 
+ul {
+	list-style: none;
+}
 // font variables
 $font: 'Poppins', sans-serif;
+$heading-size: clamp(30px, 5vw, 38px);
 $weight-light: 300;
 $weight-regular: 400;
 $weight-medium: 500;
 $weight-bold: 700;
+$heading-line-height: 1.4;
 
 // button variables
 $primary-btn-bg-color: #00ff9b;
 $primary-btn-color: #050505;
 $primary-btn-padding: 16px 32px;
+$secondary-btn-border-color: solid 2px #050505;
+$secondary-btn-padding: 14px 30px;
 $primary-btn-bradius: 30px;
-$box-radius: 10px;
+$box-radius: 20px;
 
 $bg-color: #2f2e41;
 $bg-color-light: #ffffff;
+$color-light: #fff;
+$color-primary: #00ff9b;
+$color-secondary: #fc8e03;
 $img-default-width: 100%;
+
+$width-size: 80%;
+$width-margin: 0 auto;
+
+// $box-shadow-primary: rgba(0, 255, 153, 0.089) 2px 2px 30px;
+$box-shadow-primary: 0px 4px 30px 10px rgba(33, 150, 83, 0.14);
+
+// $box-shadow-secondary: rgba(252, 140, 3, 0.144) 2px 2px 30px;
+$box-shadow-secondary: rgba(0, 0, 0, 0.055) 2px 2px 30px;

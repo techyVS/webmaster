@@ -1,0 +1,74 @@
+@use 'resets' as *;
+
+.web-dev {
+	min-height: 70vh;
+	padding: 4em 0;
+	.container {
+		width: $width-size;
+		margin: $width-margin;
+		background: #00bd51;
+		.text-wrap {
+			font-family: $font;
+			width: 80%;
+			margin: 0 auto;
+			color: $color-light;
+			padding: 3.5em 0;
+			.heading {
+				font-size: 1.2rem;
+				margin-bottom: 2em;
+			}
+			.paragraph {
+				max-width: 350px;
+				margin-bottom: 1em;
+			}
+
+			.price-tag {
+				color: $color-light;
+				font-size: 2rem;
+				position: relative;
+				padding-left: 0.3em;
+				.currency {
+					font-size: 15px;
+					position: absolute;
+					top: 16%;
+					left: 0;
+					font-weight: $weight-light;
+				}
+				.discount {
+					font-size: 1rem;
+					font-weight: $weight-medium;
+				}
+				.percent-off {
+					font-size: 1rem;
+					color: $color-light;
+					font-weight: $weight-medium;
+				}
+			}
+
+			.buttons-wrap {
+				padding-top: 2em;
+				.btn {
+					text-decoration: none;
+					display: block;
+					text-align: center;
+					background: $color-light;
+					font-weight: $weight-medium;
+					&:nth-child(1) {
+						padding: $primary-btn-padding;
+						border-radius: $primary-btn-bradius;
+						margin-bottom: 1em;
+						color: $primary-btn-color;
+					}
+					&:nth-child(2) {
+						border: $secondary-btn-border-color;
+						padding: $secondary-btn-padding;
+						background: transparent;
+						color: $color-light;
+						border: $color-light 2px solid;
+						border-radius: $primary-btn-bradius;
+					}
+				}
+			}
+		}
+	}
+}
