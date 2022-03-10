@@ -268,15 +268,29 @@
 
 // footer section
 // tablet screen
-@media screen and (min-width: 43em) {
+@media screen and (min-width: 62em) {
 	#footer {
+		padding: 5em 0 3em 0;
 		#footer-container {
-			.brand-wrap {
-				justify-content: flex-start;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+
+			.container {
+				.brand-wrap {
+					justify-content: flex-start;
+				}
+				.footer-text {
+					max-width: 350px;
+					text-align: left;
+				}
 			}
-			.footer-text {
-				max-width: 300px;
-				text-align: left;
+
+			.container-two {
+				.social-media-icons {
+					padding: unset;
+					margin-bottom: 1em;
+				}
 			}
 		}
 	}

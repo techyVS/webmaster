@@ -6,12 +6,21 @@
 	display: flex;
 	align-items: center;
 	#{&}__brand {
-		display: flex;
 		width: 80%;
 		margin: auto;
-		.logo {
-			width: 5em;
-			cursor: pointer;
+		padding: 1em 0;
+		.logo-link {
+			display: flex;
+			align-items: center;
+			.logo {
+				width: 5em;
+				cursor: pointer;
+				&:first-child {
+					margin-right: 1em;
+					width: 70px;
+					display: inline-block;
+				}
+			}
 		}
 	}
 	@media screen and (min-width: 43em) {

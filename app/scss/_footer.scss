@@ -8,52 +8,59 @@
 		width: $width-size;
 		margin: $width-margin;
 		color: $color-light;
-		.brand-wrap {
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			margin-bottom: 1.25em;
-			.main-logo {
-				display: inline-block;
-				margin-right: 1em;
+		.container {
+			.brand-wrap {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				margin-bottom: 1.25em;
+				.main-logo {
+					display: inline-block;
+					margin-right: 1em;
+				}
+				.w2dc-logo {
+					width: 80px;
+				}
 			}
-			.w2dc-logo {
-				width: 80px;
-			}
-		}
-		.footer-text {
-			font-family: $font;
-			margin-bottom: 2em;
-			display: inline-block;
-			text-align: center;
-			.span-heart {
-				display: inline-block;
-				position: relative;
-				margin-right: 1.5em;
-				height: 1em;
-				img {
-					position: absolute;
-					bottom: -40%;
+			.footer-text {
+				font-family: $font;
+				margin-bottom: 2em;
+				// display: inline-block;
+				text-align: center;
+				.span-heart {
+					display: inline-block;
+					position: relative;
+					margin-right: 1.5em;
+					height: 1em;
+					img {
+						position: absolute;
+						bottom: -40%;
+					}
 				}
 			}
 		}
 
-		.social-media-icons {
-			padding: 3em 0 2em 0;
-			max-width: 180px;
-			margin: 0 auto;
-			display: flex;
-			justify-content: space-around;
-			i {
-				display: inline-block;
-				font-size: 1.45rem;
+		.container-two {
+			.social-media-icons {
+				padding: 3em 0 2em 0;
+				max-width: 180px;
+				margin: 0 auto;
+				display: flex;
+				justify-content: space-around;
+				a {
+					color: $color-light;
+					i {
+						display: inline-block;
+						font-size: 1.45rem;
+					}
+				}
 			}
-		}
 
-		.copyright {
-			font-family: $font;
-			text-align: center;
-			font-weight: $weight-medium;
+			.copyright {
+				font-family: $font;
+				text-align: center;
+				font-weight: $weight-medium;
+			}
 		}
 	}
 }

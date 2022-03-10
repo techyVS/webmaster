@@ -75,12 +75,13 @@
 					position: absolute;
 					top: -8%;
 					right: 2%;
-					background: $color-secondary;
+					background: $color-light;
 					padding: 15px 30px;
 					border-radius: 30px;
-					color: $color-light;
+					color: $color-secondary;
 					text-transform: capitalize;
 					font-weight: $weight-medium;
+					box-shadow: $box-shadow-primary;
 				}
 			}
 		}
